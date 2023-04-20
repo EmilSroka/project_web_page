@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wykorzystanie localStorage</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header>
+    <h1>Wykorzystanie localStorage w serwisie</h1>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li><a href="#co-to-jest">Co to jest localStorage?</a></li>
+            <li><a href="#jak-wykorzystujemy">Jak wykorzystujemy localStorage w serwisie?</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="co-to-jest">
+        <h2>Co to jest localStorage?</h2>
+        <p>LocalStorage to funkcja wbudowana w przeglądarki internetowe, która pozwala na przechowywanie danych na komputerze użytkownika. Jest to część większej specyfikacji Web Storage, która obejmuje także sessionStorage. localStorage jest trwałe, co oznacza, że dane są przechowywane nawet po zamknięciu przeglądarki.</p>
+        <p>LocalStorage jest prostym narzędziem, które pozwala na zapisywanie par klucz-wartość na komputerze użytkownika. Pozwala na przechowywanie danych w sposób prosty i bezpieczny. Dane są przechowywane lokalnie, więc nie są udostępniane innym witrynom ani serwerom.</p>
+        <p>Jeśli chcesz dowiedzieć się więcej o localStorage, zajrzyj do oficjalnej <a href="https://developer.mozilla.org/pl/docs/Web/API/Window/localStorage" target="_blank">dokumentacji</a>.<br>
+        <figure>
+            <img src="../imgs/storage.png" alt="Przykład użycia localStorage">
+            <figcaption>Ilustracja przedstawiająca przykład użycia localStorage</figcaption>
+        </figure>
+    </section>
+    <section id="jak-wykorzystujemy">
+        <h2>Jak wykorzystujemy localStorage w serwisie?</h2>
+        <p>W naszym serwisie wykorzystujemy localStorage do przechowywania informacji o dacie ostatniej wizyty użytkownika. <b>Informację tą można zobaczyć w stopce.</b> Dzięki temu możemy sprawdzić, kiedy ostatnio użytkownik odwiedził naszą stronę, i dostosować treść strony do jego potrzeb. Dzięki localStorage możemy zapewnić bardziej spersonalizowane doświadczenie dla naszych użytkowników.</p>
+        <p>Przechowywanie daty ostatniej wizyty w localStorage jest bezpieczne i wydajne. localStorage pozwala na przechowywanie danych bez potrzeby łączenia się z serwerem ani przesyłania danych za każdym razem, gdy użytkownik odwiedza stronę. Ponadto, localStorage jest obsługiwane przez wszystkie współczesne przeglądarki, dzięki czemu jest uniwersalnym rozwiązaniem dla przechowywania danych na stronie klienta.</p>
+        <p>Wykorzystanie localStorage w naszym serwisie pokazuje, jak można wykorzystać tę technologię do udoskonalenia interakcji użytkowników z witryną. W miarę jak będziemy dodawać więcej funkcji do serwisu, będziemy dalej korzystać z localStorage, aby zapewnić wyjątkowe wrażenia dla użytkowników, takie jak personalizacja, przechowywanie preferencji użytkowników czy zarządzanie stanem aplikacji.</p>
+    </section>
+</main>
+<footer>
+    <p>© 2023 - Wszelkie prawa zastrzeżone</p>
+    <p>Więcej informacji o React znajdziesz w <a href="https://pl.reactjs.org/docs/getting-started.html" target="_blank">oficjalnej dokumentacji</a>.</p>
+    <p class="ostatnie">Ostatnie odwiedziny: </p>
+</footer>
+<script src="../storage.js"></script>
+</body>
+</html>
